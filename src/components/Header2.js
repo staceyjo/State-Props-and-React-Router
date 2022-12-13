@@ -1,7 +1,13 @@
+import { Link } from "react-router-dom";
+
 export default function Header(props) {
     return (
         <header>
-            <span><h1 className="header"><span><a href="/homepage" class="previous">&#8249;</a></span>Employee Profile</h1></span>
+            <span>
+                <h1 className="header">
+                    <Link to="/homepage" class="previous">&#8249;</Link>
+                    Employee Profile
+                </h1></span>
         </header>
     );
 }
