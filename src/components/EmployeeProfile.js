@@ -33,40 +33,47 @@ export default function EmployeeProfile(props) {
     }, [])
 
     const loaded = () => {
-
+    // const { id } = useParams()
+    // console.log(id)
         return (
             <div>
                 <div className="employeeProfile">
                     <div className="employeeProfilePicture">
                         <img src={employeeInfo.img} alt="img" />
+                        {/* <img src={employeesArray[id].img} alt="img" /> */}
                     </div>
 
                     <div>
                         <h2 className="employeeName">{employeeInfo.name}</h2>
+                        {/* <h2 className="employeeName">{employeesArray[id].name}</h2> */}
                         <h5 className="employeeTitle">{employeeInfo.title}</h5>
+                        {/* <h5 className="employeeTitle">{employeesArray[id].title}</h5> */}
                     </div>
                 </div>
 
                 <div className="employeeProfileBox">
                     <h3>Call Office &#8250;</h3>
                     <h5>{employeeInfo.office}</h5>
+                    {/* <h5>{employeesArray[id].office}</h5> */}
                 </div>
 
                 <div className="employeeProfileBox">
                     <h3>Call Mobile &#8250;</h3>
                     <h5>{employeeInfo.mobile}</h5>
+                    {/* <h5>{employeesArray[id].mobile}</h5> */}
                 </div>
 
                 <div className="employeeProfileBox">
                     <h3>SMS &#8250;</h3>
                     <h5>{employeeInfo.SMS}</h5>
+                    {/* <h5>{employeesArray[id].SMS}</h5> */}
                 </div>
 
                 <div className="employeeProfileBox">
                     <h3>Email &#8250;</h3>
                     <h5>{employeeInfo.email}</h5>
+                    {/* <h5>{employeesArray[id].email}</h5> */}
                 </div>
-
             </div>
         );
     }
